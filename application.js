@@ -1,11 +1,11 @@
-const initAlert = () => {
-  document.getElementById('alert').addEventListener('click', (e) => {
-    alert('Meddl Loide')
-  })
+const setCurrentYear = () => {
+  const date = new Date().getFullYear()
+
+  document.getElementById('currentYear').innerHTML = date;
 }
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  initAlert()
+  setCurrentYear()
 }, false)

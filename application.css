@@ -1,11 +1,92 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Itim", cursive;
   font-weight: 400;
   font-style: normal;
+
+  background: black;
+  color: white;
 }
 
 .itim-regular {
   font-family: "Itim", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.neon {
+  font-family: "neon";
+  color: #f09;
+
+  animation: pulsate 0.3s ease-in-out infinite alternate;
+}
+
+.header__container {
+  margin-bottom: 3rem;
+}
+
+.header__text {
+  text-align: center;
+  font-size: 3rem;
+
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #04d9ff
+}
+
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @media screen and (max-width: 680px) {
+    padding: 0.5rem;
+  }
+}
+
+.intro {
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1.25rem;
+}
+
+.minidisclaimer {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.footer {
+
+}
+
+@font-face {
+  font-family: "neon";
+  font-weight: regular;
+  font-style: normal;
+  src: local("Josefine"),
+    url("./fonts/Neonderthaw-Regular.ttf") format("truetype");
+}
+
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #04d9ff, 0 0 11px #04d9ff, 0 0 19px #04d9ff, 0 0 40px #f09,
+      0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow: 0 0 4px #04d9ff, 0 0 10px #04d9ff, 0 0 18px #04d9ff, 0 0 38px #f09,
+      0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
+  }
 }
